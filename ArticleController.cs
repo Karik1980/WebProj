@@ -63,23 +63,8 @@ namespace WebProject.Controllers
             }
             article.Date = DateTime.Now;
 
-            //if (Categories != null)
-            //{
-            //    //article.Categories = new List<Category>();
-            //    var categories = context.Categories.Where(c => Categories.Contains(c.Id)).ToList();
-            //    foreach (var cat in categories)
-            //    {
-            //        article.Categories.Add(cat);
-            //    }
-            //}
-            //if(Tags !=null)
-            //{
-            //    var tags = context.Tags.Where(t => Tags.Contains(t.Id)).ToList();
-            //    foreach(var tg in tags)
-            //    {
-            //        article.Tags.Add(tg);
-            //    }
-            //}
+        
+    
                 context.Articles.Add(article);
                 context.SaveChanges();
             
